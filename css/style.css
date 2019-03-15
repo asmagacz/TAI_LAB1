@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -18,4 +22,16 @@ form {
 
 .navbar{
     justify-content: center;
+}
+
+.sidebar{
+    justify-content: flex-end;
+}
+.scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.offset{
+    margin-left: 10%;
 }
