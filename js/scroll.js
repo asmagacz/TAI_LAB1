@@ -1,5 +1,6 @@
 // Pobranie elementu
 let button = document.querySelector('.scroll');
+window.onscroll = function (){showTopButton();};
 
 //dodanie listenera, odpowiedzialnego za uruchomienie akcji
 button.addEventListener('click', goToTop);
@@ -13,8 +14,8 @@ function goToTop() {
 //dodanie funkcji odpowiedzialnej za pojawianie się przycisku po zjechaniu 200px w dół
 function showTopButton() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.querySelector(".myButton").style.display = "block";
+        document.querySelector(".scroll").style.display = "block";
     } else {
-        document.querySelector(".myButton").style.display = "none";
+        document.querySelector(".scroll").style.display = "none";
     }
 }
